@@ -1,0 +1,32 @@
+### to create a new blog post
+Post http://localhost:3000/post/
+content-type: application/json
+
+{
+    "title": "first post",
+
+    "content": "first post content"
+}
+
+### fetch all blogs
+
+Get http://localhost:3000/post
+
+
+### fetch a post by id
+
+Get http://localhost:3000/post/1696856200584
+
+###update a post by id
+
+Put http://localhost:3000/post/1696856200584
+content-type:application/json
+
+{
+    "title": "first post update 1",
+
+    "content": "content of first post updated 1"
+}
+
+### delete a post by id
+Delete http://localhost:3000/post/1696856200584
